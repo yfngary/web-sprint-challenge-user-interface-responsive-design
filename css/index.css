@@ -83,14 +83,54 @@ p, a {
     font-size: 3rem;
 }
 
+h1 a {
+    color: white;
+}
 /* header section */
 header {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-color: inherit;
+    border: none;
+    width: 100%;
+}
+
+.navLinks {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav a {
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.socialMediaButtons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    width: 100%;
+}
+
+nav i{
+    justify-content: space-evenly;
+    color:white;
 }
 
 /* spacers */
@@ -113,10 +153,28 @@ header {
     background-color: rgb(0, 4, 17);
 }
 
+h2 {
+    color:white;
+}
+
+.foodImages {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foodImages img {
+    width: 30%;
+    height: 15;
+    padding: 3% 3%;
+}
+
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: 90vh;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -125,7 +183,7 @@ header {
 }
 
 .about-container {
-    height: 100%;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -138,7 +196,16 @@ header {
 }
 
 .about-container .text {
-    width: 50%;
+    width: 70%;
+    height: 35vh;
+}
+
+.text p {
+    color: white;
+}
+
+.text h3 {
+    color: white;
 }
 
 /* contact us section */
@@ -179,23 +246,56 @@ header {
     width: 25%;
 }
 
+.address p, h3 {
+    color: white;
+}
+
 .hours {
     width: 25%;
     padding-bottom: 2.5vh;
+}
+
+.hours p, h3 {
+    color: white;
 }
 
 .contacts {
     width: 25%;
 }
 
+.contacts a {
+    color: white;
+}
+
+#email {
+    margin-right: 20%;
+}
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
-    padding-top: 2.5vh;
+    height: 20vh;
+    padding: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+footer .navLinks {
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .emailSignup {
+    color: white;
+}
+
+.copyrightText{
+    background-color: rgb(0, 4, 17);
+    color: white;
+}
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
